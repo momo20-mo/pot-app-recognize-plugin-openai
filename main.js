@@ -82,7 +82,7 @@ async function recognize(base64, lang, options) {
                 "content": [
                     {
                         "type": "file",
-                        "image_url": {
+                        "file_url": {
                             "url": `data:image/jpeg;base64,${compressedBase64}`,
                             "detail": "high"
                         },
@@ -108,4 +108,5 @@ async function recognize(base64, lang, options) {
         throw `Http Request Error\nHttp Status: ${res.status}\n${JSON.stringify(res.data)}`;
     }
 }
+
 
